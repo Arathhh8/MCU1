@@ -1,0 +1,159 @@
+/*
+ * stm32f103xx_gpio_driver.c
+ *
+ *  Created on: Jan 3, 2024
+ *      Author: arath
+ */
+
+#include"stm32f103xx_gpio_driver.h"
+
+/*
+ * Peripheral Clock setup
+ */
+
+/**************************************************************************************************
+ * @fn 					- GPIO_PeriClockControl
+ *
+ * @brief				- This function enable or disables peripheral clock for the given GPIO port
+ *
+ * @param[in]			- base address of the GPIO peripheral
+ * @param[in]			- ENABLE or DISABLE macros
+ * @param[in]			-
+ *
+ * @return				- none
+ *
+ * @Note				- none
+ */
+
+/*void GPIO_PeriClockControl(GPIO_RegDef_t *pGPIOx, uint8_t  EnorDi){
+	if(EnorDi == ENABLE){
+		if(pGPIOx == GPIOA){
+			GPIOA_PCLK_EN();
+		}else if(pGPIOx == GPIOB){
+			GPIOB_PCLK_EN();
+		}else if(pGPIOx == GPIOC){
+			GPIOC_PCLK_EN();
+		}else if(pGPIOx == GPIOD){
+			GPIOD_PCLK_EN();
+		}else if(pGPIOx == GPIOE){
+			GPIOE_PCLK_EN();
+		}else if(pGPIOx == GPIOF){
+			GPIOF_PCLK_EN();
+		}else if(pGPIOx == GPIOG){
+			GPIOG_PCLK_EN();
+		}
+	else{
+		if(pGPIOx == GPIOA){
+			GPIOA_PCLK_DI();
+		}else if(pGPIOx == GPIOB){
+			GPIOB_PCLK_DI();
+		}else if(pGPIOx == GPIOC){
+			GPIOC_PCLK_DI();
+		}else if(pGPIOx == GPIOD){
+			GPIOD_PCLK_DI();
+		}else if(pGPIOx == GPIOE){
+			GPIOE_PCLK_DI()();
+		}else if(pGPIOx == GPIOF){
+			GPIOF_PCLK_DI();
+		}else if(pGPIOx == GPIOG){
+			GPIOG_PCLK_DI();
+		}
+	}
+}*/
+
+/**************************************************************************************************
+ * @fn 					- GPIO_Init and GPIO_DeInit
+ *
+ * @brief				- This function
+ *
+ * @param[in]			- base address of the GPIO peripheral
+ * @param[in]			-
+ * @param[in]			-
+ *
+ * @return				- none
+ *
+ * @Note				- none
+ */
+
+/*
+ * Init and De-Init
+ */
+void GPIO_Init(GPIO_Handle_t *pGPIOHandle){
+	// uint32_t temp = 0; // temporal variable
+
+	// 1. Configure the mode of gpio pin
+
+	/* Port configuration register low
+	 * MODEy[1:0]: Port x mode bits (y= 0 .. 7)
+	 */
+
+/*	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode <= GPIO_MODE_AF_OD){
+		// then non interrupt mode
+		temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode << (4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber));
+	}else{
+		// this part will code later . (interrupt mode)
+	}
+/*
+
+	/* Port configuration register high*/
+
+
+
+	// 2. Configure the speed
+	uint32_t temp = 0; // temp register
+
+	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinSpeed == GPIO_MODE_IN_RESET_STATE){
+		// then the GPIO is in INPUT Mode
+
+		// this code config the GPIO_PinSpeed
+		temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinSpeed << (4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber));
+		pGPIOHandle->pGPIOx->CRL |= temp;
+		// this code config the GPIO_PinMode
+		temp = 0;
+		temp = pGPIOHandle->GPIO_PinConfig.GPIO_PinMode << (2 + 4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);
+		pGPIOHandle->pGPIOx->CRL |= temp;
+	}else{
+		// then the GPIO is in OUTPUT Mode
+	}
+
+
+	// 3. Configure pupd settings
+
+	// 4. Configure the optype
+
+	// 5. Configure the alt functionality
+}
+void GPIO_DeInit(GPIO_Handle_t *pGPIOx){
+
+}
+
+/*
+ * Data read and write
+ */
+
+uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
+
+}
+uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx){
+
+}
+void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Value){
+
+}
+void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value){
+
+}
+void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
+
+}
+
+/*
+ * IRQ Configuration and ISR Handling
+ */
+void GPIO_IRQConfig(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnorDi){
+
+}
+void GPIO_IRQHandling(uint8_t PinNumber){
+
+}
+

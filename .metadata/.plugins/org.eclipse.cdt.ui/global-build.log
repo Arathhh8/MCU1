@@ -1,0 +1,550 @@
+22:56:07 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:127:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  127 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:132:12: warning: comparison of distinct pointer types lacks a cast
+  132 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:134:18: warning: comparison of distinct pointer types lacks a cast
+  134 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:136:18: warning: comparison of distinct pointer types lacks a cast
+  136 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:138:18: warning: comparison of distinct pointer types lacks a cast
+  138 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:140:18: warning: comparison of distinct pointer types lacks a cast
+  140 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:142:18: warning: comparison of distinct pointer types lacks a cast
+  142 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:144:18: warning: comparison of distinct pointer types lacks a cast
+  144 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1484	      8	   1568	   3060	    bf4	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+22:56:12 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1484	      8	   1568	   3060	    bf4	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+23:04:48 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:128:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  128 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:133:12: warning: comparison of distinct pointer types lacks a cast
+  133 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:135:18: warning: comparison of distinct pointer types lacks a cast
+  135 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1472	      8	   1568	   3048	    be8	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+23:09:26 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:128:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  128 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:133:12: warning: comparison of distinct pointer types lacks a cast
+  133 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:135:18: warning: comparison of distinct pointer types lacks a cast
+  135 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1472	      8	   1568	   3048	    be8	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+23:10:38 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:128:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  128 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:133:12: warning: comparison of distinct pointer types lacks a cast
+  133 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:135:18: warning: comparison of distinct pointer types lacks a cast
+  135 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1472	      8	   1568	   3048	    be8	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+23:11:59 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:128:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  128 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:133:12: warning: comparison of distinct pointer types lacks a cast
+  133 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:135:18: warning: comparison of distinct pointer types lacks a cast
+  135 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1484	      8	   1568	   3060	    bf4	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+23:23:59 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:129:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  129 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:134:12: warning: comparison of distinct pointer types lacks a cast
+  134 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:136:18: warning: comparison of distinct pointer types lacks a cast
+  136 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:138:18: warning: comparison of distinct pointer types lacks a cast
+  138 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:140:18: warning: comparison of distinct pointer types lacks a cast
+  140 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:142:18: warning: comparison of distinct pointer types lacks a cast
+  142 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:144:18: warning: comparison of distinct pointer types lacks a cast
+  144 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:146:18: warning: comparison of distinct pointer types lacks a cast
+  146 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+23:27:48 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+23:34:37 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+23:36:52 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+00:01:40 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:129:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  129 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:134:12: warning: comparison of distinct pointer types lacks a cast
+  134 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:136:18: warning: comparison of distinct pointer types lacks a cast
+  136 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:138:18: warning: comparison of distinct pointer types lacks a cast
+  138 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:140:18: warning: comparison of distinct pointer types lacks a cast
+  140 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:142:18: warning: comparison of distinct pointer types lacks a cast
+  142 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:144:18: warning: comparison of distinct pointer types lacks a cast
+  144 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:146:18: warning: comparison of distinct pointer types lacks a cast
+  146 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+00:49:49 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:129:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  129 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:134:12: warning: comparison of distinct pointer types lacks a cast
+  134 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:136:18: warning: comparison of distinct pointer types lacks a cast
+  136 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:138:18: warning: comparison of distinct pointer types lacks a cast
+  138 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:140:18: warning: comparison of distinct pointer types lacks a cast
+  140 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:142:18: warning: comparison of distinct pointer types lacks a cast
+  142 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:144:18: warning: comparison of distinct pointer types lacks a cast
+  144 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:146:18: warning: comparison of distinct pointer types lacks a cast
+  146 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1504	      8	   1568	   3080	    c08	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+01:00:53 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:130:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  130 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:135:12: warning: comparison of distinct pointer types lacks a cast
+  135 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:147:18: warning: comparison of distinct pointer types lacks a cast
+  147 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+01:04:45 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:130:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  130 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:135:12: warning: comparison of distinct pointer types lacks a cast
+  135 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:147:18: warning: comparison of distinct pointer types lacks a cast
+  147 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+01:06:22 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:130:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  130 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:135:12: warning: comparison of distinct pointer types lacks a cast
+  135 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:147:18: warning: comparison of distinct pointer types lacks a cast
+  147 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+01:06:39 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+01:06:58 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+01:07:21 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1528	      8	   1568	   3104	    c20	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+01:08:37 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../drivers/Src/stm32f103xx_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -I"C:/Users/arath/Desktop/Embedded Software/Course Mastering Microcontroller and Embedded Driver Development/MCU1-Course/MCU1/stm32f1xx_drivers/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"drivers/Src/stm32f103xx_gpio_driver.d" -MT"drivers/Src/stm32f103xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "drivers/Src/stm32f103xx_gpio_driver.o"
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_Init':
+../drivers/Src/stm32f103xx_gpio_driver.c:130:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  130 |  if(temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinMode >= GPIO_MODE_AF_PP )){
+      |     ^~~~
+../drivers/Src/stm32f103xx_gpio_driver.c: In function 'GPIO_DeInit':
+../drivers/Src/stm32f103xx_gpio_driver.c:135:12: warning: comparison of distinct pointer types lacks a cast
+  135 |  if(pGPIOx == GPIOA){
+      |            ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:137:18: warning: comparison of distinct pointer types lacks a cast
+  137 |  }else if(pGPIOx == GPIOB){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:139:18: warning: comparison of distinct pointer types lacks a cast
+  139 |  }else if(pGPIOx == GPIOC){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:141:18: warning: comparison of distinct pointer types lacks a cast
+  141 |  }else if(pGPIOx == GPIOD){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:143:18: warning: comparison of distinct pointer types lacks a cast
+  143 |  }else if(pGPIOx == GPIOE){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:145:18: warning: comparison of distinct pointer types lacks a cast
+  145 |  }else if(pGPIOx == GPIOF){
+      |                  ^~
+../drivers/Src/stm32f103xx_gpio_driver.c:147:18: warning: comparison of distinct pointer types lacks a cast
+  147 |  }else if(pGPIOx == GPIOG){
+      |                  ^~
+arm-none-eabi-gcc -o "stm32f1xx_drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\arath\Desktop\Embedded Software\Course Mastering Microcontroller and Embedded Driver Development\MCU1-Course\MCU1\stm32f1xx_drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f1xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f1xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+arm-none-eabi-objdump -h -S  stm32f1xx_drivers.elf  > "stm32f1xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   1532	      8	   1568	   3108	    c24	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f1xx_drivers.list
+ 
+01:09:53 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1532	      8	   1568	   3108	    c24	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:13:25 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1532	      8	   1568	   3108	    c24	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
+12:23:56 **** Incremental Build of configuration Debug for project stm32f1xx_drivers ****
+make -j12 all 
+arm-none-eabi-size   stm32f1xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1532	      8	   1568	   3108	    c24	stm32f1xx_drivers.elf
+Finished building: default.size.stdout
+ 
